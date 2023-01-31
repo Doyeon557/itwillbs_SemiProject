@@ -1,0 +1,218 @@
+@charset "UTF-8";
+
+.w3-sidebar a {
+	font-family: "Roboto", sans-serif
+}
+
+body, h1, h2, h3, h4, h5, h6, .w3-wide {
+	font-family: "Montserrat", sans-serif;
+}
+
+
+
+#table_search{
+ float: right
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<style type="text/css">
+
+/* boardcss_list 에서 사용되는 글 등록 버튼 테이블 크기 */
+#boardcss_list_add_button_table {
+	width: 100%;
+	margin: 0 auto 15px;
+	/*position: relative; background: #bddcff; font-weight: bold;*/
+}
+
+/* 화면에 보여지는 글 등록 버튼 */
+#boardcss_list_add_button_table .add_button {
+	cursor: pointer;
+	border: 1px solid #bebebe;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 85px;
+	padding: 6px 0 6px;
+	text-align: center;
+	font-weight: bold;
+}
+
+#boardcss_list_add_button_table .add_button a {
+	color: #ffffff;
+}
+
+#boardcss_list_add_button_table .add_button {
+	float: right
+}
+/* 글 등록 버튼과 글 목록이 겹치지 않게 만들어준 아무것도 아닌것 */
+#boardcss_list_add_button_table .boardcss_list_add_button ul {
+	width: 100%;
+	overflow: hidden;
+	height: 10px;
+}
+
+/* boardcss_list 에서 사용하는 글 목록 테이블 크기*/
+.boardcss_list_table {
+	width: 50%;
+	font-size: 60px;
+}
+
+/* 화면에 보여지는 글 목록 테이블 */
+.list_table {
+	width: 100%;
+}
+
+/* 화면에 보여지는 caption */
+.list_table caption {
+	display: none;
+}
+
+/* list_table 에서 사용되는 thead */
+.list_table thead th {
+	text-align: center;
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	padding: 8px 0;
+	background: #faf9fa;
+}
+
+/* list_table 에서 사용되는 tbody */
+.list_table tbody td {
+	text-align: center;
+	border-bottom: 1px solid #e5e5e5;
+	padding: 5px 0;
+}
+
+/* boardcss_list 에서 사용되는 글 검색 테이블 크기 */
+#boardcss_list_search {
+	width: 100%;
+}
+
+#boardcss_list_search ul {
+	float: right;
+	width: 550px;
+	display: inline;
+	margin-right: -130px;
+}
+
+#boardcss_list_search ul li {
+	display: inline;
+	font-weight: bold;
+}
+
+/* input 상자 모양 */
+#search {
+	width: 200px;
+	height: 30px;
+	text-align: center;
+	border: 1px solid #cfcfcf;
+	vertical-align: middle;
+	line-height: 29px;
+}
+
+#search2 {
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	border: 1px solid #cfcfcf;
+	vertical-align: middle;
+	line-height: 29px;
+}
+
+/* 검색 버튼 */
+#boardcss_list_search ul li.search_button {
+	cursor: pointer;
+	width: 60px;
+	text-align: center;
+	border: 1px solid #bebebe;
+	padding: 6px 0 6px;
+	vertical-align: middle;
+	font-weight: bold;
+	margin-right: 10px; /* background: #77b32f; */
+}
+
+#boardcss_list_search ul li.search_button a {
+	color: #ffffff;
+}
+
+/* 상세 검색버튼 */
+#boardcss_list_search ul li.detail_button {
+	cursor: pointer;
+	width: 100px;
+	text-align: center;
+	border: 1px solid #bebebe;
+	padding: 6px 0 6px;
+	vertical-align: middle;
+	font-weight: bold; /* background: #77b32f; */
+}
+
+#boardcss_list_search ul li.detail_button a {
+	color: #ffffff;
+}
+
+/* 상세검색 테이블 */
+.detailSearch {
+	width: 100%;
+	border-top: 1px solid #e5e5e5;
+}
+
+.detailSearch .detailSearch_table {
+	width: 100%;
+	border-top: 0;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.detailSearch .detailSearch_table tbody td {
+	padding: 5px 0;
+}
+
+.detailSearch .detailSearch_table tbody td.detailSearch_td {
+	vertical-align: middle;
+	height: 30px;
+}
+
+.detail_td {
+	width: 100%;
+	position: relative;
+	height: 30px;
+}
+
+.detail_td .detailSearch_button {
+	cursor: pointer;
+	width: 54px;
+	position: absolute;
+	border: 1px solid #bebebe;
+	padding: 6px 0 6px;
+	text-align: center;
+	font-weight: bold;
+	right: 44px;
+	display: block; /* background: #77b32f; */
+}
+
+.detail_td .detailSearch_button a {
+	color: #ffffff;
+}
+
+/* 상세검색 닫기 */
+.closeButton_table {
+	width: 100%;
+	text-align: right;
+}
+
+.closeButton {
+	width: 85px;
+	text-align: center;
+	display: inline-block;
+	border: 1px solid #bebebe;
+	padding: 6px 0 6px;
+	cursor: pointer;
+	font-weight: bold;
+}

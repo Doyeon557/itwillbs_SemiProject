@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+#title {
+	font-size: 40px;
+	font-weight: bold;
+	padding: 30px;
+	margin: 0 auto;
+}
+
+#movieInsert {
+	margin: 0 auto;
+	width: 800px;
+	height: 700px;
+}
+
+#movieInsert-left {
+	width: 350px;
+	height: 500px;
+	float: left;
+}
+
+#list {
+	margin: 10px 10px 10px 10px;
+}
+
+#list > hr {
+	border-top: 1px solid #bbb;
+	border-bottom: 1px solid #fff;
+}
+
+#movieInsert-left > button {
+	float: right;
+	background-color: #329EB1;
+	font-weight: bold;
+	color: #fff;
+	border: none;
+	padding: 5px 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	margin: 5px 0px 0px 0px;
+	cursor: pointer;
+}
+
+#insertBtn {
+	float: right;
+	background-color: #329EB1;
+	font-weight: bold;
+	color: #fff;
+	border: none;
+	padding: 5px 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	margin: 5px 0px 0px 0px;
+	cursor: pointer;
+}
+
+#movieInsert-right {
+	width: 400px;
+	height: 500px;
+	float: right;
+	padding: 5px;
+}
+
+#movieInsert-left>input[type=text] {
+  width: 100%;
+  padding: 10px 10px;
+  margin: 3px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #bbb;
+}
+
+#movieInsert-right>form>input[type=text] {
+  width: 50%;
+  padding: 5px 10px;
+  margin: 3px 0px 4px 15px;
+  border: none;
+  border-bottom: 1px solid #bbb;
+}
+
+#movieInsert-right>form>label{
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#movie_Story {
+	font-size: 15px;
+	padding: 5px 5px;
+	margin: 3px 0;
+	resize: none;
+}

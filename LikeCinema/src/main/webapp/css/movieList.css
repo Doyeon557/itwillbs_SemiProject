@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+#tab {
+	width: 1100px;
+	text-align: center;
+	padding: 10px;
+	font-size: 20px;
+}
+
+ul#tab {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+ul#tab li {
+	background: none;
+	color: #222;
+	display: inline-block;
+	padding: 10px 15px;
+	text-align: center;
+	font-size: 18px;
+	width: 333px;
+}
+
+.container1 {
+	display: grid;
+	margin: 150px 250px auto;
+	grid-template-columns: repeat(4, 300px);
+	grid-template-rows: repeat(3, 520px);
+}
+
+.title > strong {
+	font-size: 23px;
+}
+
+.movieList {
+	margin: 0px 0px 250px 0px;
+	text-align: center;
+}
+
+.movieList>.poster img{
+	margin: 0px auto 10px;
+	width: 250px;
+}
+
+
+.resBtn {
+	background-color: #503396;
+	border: none;
+	color: #fff;
+	padding: 6px 35px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 5px;
+	font-size: 14px;
+}
+
+.soonBtn {
+	background-color: #666;
+	border: none;
+	color: #fff;
+	padding: 6px 35px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 5px;
+	font-size: 14px;
+}
+
+.title {
+	width: 250px;
+	margin: 0px auto 10px;
+}
+
+.title>img {
+	height: 20x;
+	width: 20px;
+}

@@ -1,0 +1,33 @@
+@CHARSET "UTF-8";
+
+#star {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 3.5em;
+  line-height: 2.5rem;
+  justify-content: space-around;
+  padding: 0px 0px 25px; 
+  text-align: center;
+  width: 5.5em;
+  margin: auto;
+}
+ 
+#star input {
+  display: none;
+}
+ 
+#star label {
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ffd700;
+  cursor: pointer;
+}
+ 
+#star :checked ~ label {
+  -webkit-text-fill-color: #ffd700;
+}
+ 
+#star label:hover,
+#star label:hover ~ label {
+  -webkit-text-fill-color: #ffd700;
+}

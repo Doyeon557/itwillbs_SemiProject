@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+.container1 {
+	margin: 0px 0px auto 215px;
+	height: 1000px;
+	
+}
+
+.movieList {
+	width: 1450px;
+	height: 500px;
+	text-align: center; 
+}
+
+.revBtn2 {
+	color: #503396;
+	background-color: transparent;
+	float: right; 
+	border: none;
+	font-size: 15px;
+	margin: 0px 5px 0 0;
+
+}
+.movieList {
+  border-collapse: collapse;
+}  
+
+.movieList th {
+  padding: 10px;
+  color: #503396;
+  border-bottom: 3px solid #329eb1;
+  text-align: center;
+}
+.movieList td {
+  color: #503396;
+  border-bottom: 1px solid #ddd;
+}
+.movieList tr:hover td {
+	background-color: #f2f2f2;
+}
+
+.revBtn2:hover{
+	color: #329eb1;
+	cursor: pointer;
+}
+
+.revBtn1 {
+	background-color: #503396;
+	border: none;
+	color: white;
+	padding: 10px 30px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 0px 70px 20px 0px;
+	cursor: pointer;
+	float: right;
+}
+
+#paging {
+	text-align: center;
+}
+
+#paging>a {
+	font-size: 15px;
+	color: #503396;
+}
+

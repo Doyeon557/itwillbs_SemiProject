@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+/* Common */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0;border:0}
+body,input,select,textarea,header,footer{color:#333;font-family:'Tahoma','돋움',dotum,Nanum Gothic,sans-serif;font-size:12px;font-weight:normal;}
+body.mac-os,input.mac-os,select.mac-os,textarea.mac-os,header.mac-os,footer.mac-os{font-family:Apple SD Gothic Neo, AppleGothic,'돋움',dotum,Nanum Gothic,sans-serif}
+body{background:#fff;-webkit-text-size-adjust:none;text-align:left;}/*background:#f2f0e4*/
+table{border-spacing:0;border-collapse:collapse}
+img,fieldset{border:0 none;}
+img,input,select,textarea{vertical-align:top;}
+em,cite,address,dfn,var{font-style:normal;}
+dl,ul,ol{list-style:none;} 
+a{text-decoration:none;text-overflow:ellipsis;-o-text-overflow:ellipsis;color:#333;}
+a:link,a:active{text-decoration:none;}
+a:hover{text-decoration:underline;}
+caption,legend{overflow:hidden;visibility:hidden;width:0;height:0;line-height:0;font-size:0}
+em{font-style:normal}
+.hidden{overflow:hidden;position:absolute;top:0;left:0;width:0;height:0;font-size:0;line-height:0;visibility:hidden;}
+.blind{visibility:hidden;height: 0;font-size: 0;width:0;}
+.btnMoreH{display:inline-block;position:absolute;top:0;left:0;width:1px;height:1px;line-height:0;margin:-1px 0 0 -1px;color:#336699;font-size:0;text-align:right}
+.btnMoreH:focus,
+.btnMoreH:active{position:relative;width:100%;height:12px;line-height:12px;margin:0;font-size:12px;text-decoration:underline}
+button{border:none;cursor:pointer;} 
+button span{display:none;}
+label{cursor:pointer;}
+input.text{margin-right:2px;height:14px;width:219px;padding:6px 7px 7px;*padding:6px 7px 7px;border:1px solid #b5b5b5;background:#f2f0e5;}
+input[type="checkbox"],
+input[type="radio"]{vertical-align:middle}
+input.nohan{ime-mode:disabled}
+
+/* FONT */
+/*@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url(http://img.cgv.co.kr/CGV_RIA/Ticket/Common/css/font/NanumBarunGothic.eot);
+  src: url(http://img.cgv.co.kr/CGV_RIA/Ticket/Common/css/font/NanumBarunGothic.eot?#iefix) format('embedded-opentype'),
+       url(http://img.cgv.co.kr/CGV_RIA/Ticket/Common/css/font/NanumBarunGothic.woff) format('woff'),
+       url(http://img.cgv.co.kr/CGV_RIA/Ticket/Common/css/font/NanumBarunGothic.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 700;
+  src: url(http://img.cgv.co.kr/CGV_RIA/Ticket/Common/css/font/NanumBarunGothicBold.eot);
+  src: url(http://img.cgv.co.kr/CGV_RIA/Ticket/Common/css/font/NanumBarunGothicBold.eot?#iefix) format('embedded-opentype'),
+       url(http://img.cgv.co.kr/CGV_RIA/Ticket/Common/css/font/NanumBarunGothicBold.woff) format('woff'),
+       url(http://img.cgv.co.kr/CGV_RIA/Ticket/Common/css/font/NanumBarunGothicBold.ttf) format('truetype');
+}
+*/
+/* margin, padding 클래스 모음 */
+.mgb20{margin-bottom:20px !important}
+.pdr7{padding-right:7px}
+
+/* text */
+.lh20{line-height:20px}
+.txt_type01{line-height:20px;font-size:12px;letter-spacing:-1px}
+.txt_type02{line-height:20px;font-size:12px}
+.align-right{text-align:right}
+.align-center{text-align:center}
+
+/* select box */
+.select-box{display:inline-block;*display:inline;zoom:1;position:relative;width:150px;height:27px;line-height:27px;#margin-right:4px;padding:0 11px 0 10px;border:1px solid #b5b5b5;background:#f2f0e4 url('http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/common/selectbox-btn.png') no-repeat right 50%;color:#333;font-size:13px;text-align:left;vertical-align:middle}
+.select-box.vt{vertical-align:top;#vertical-align:middle !important}
+.select-box.wht{background-color:#ffffff}
+.select-box.pop{background-color:#f6f6f4}
+.select-box.comm{border:1px solid #d5d3c9 !important;background-color:#ffffff}
+.select-box select{background:#f2f0e4;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0);opacity:0; width:100%;height:100%;position: absolute;top:0;left:0;font-weight: normal;color:#333;}
+.select-box.hover{border:1px dotted #000}
+
+/* 레이어팝업 및 일반팝업 */ 
+.layer_popup{display:none;background-color:#f6f6f4;border:5px solid #333;position:fixed;left:50%;top:10%;width:624px;margin-left:-312px;z-index:1000;text-align:left;}
+.popup_area{background-color:#f6f6f4;border:5px solid #333;width:624px;text-align:left;}
+.layer_popup a.close, .popup_area a.close{display:block;background:url("http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/common/k_layer_common.png") no-repeat 0 0;}
+.layer_popup span.des, .popup_area span.des{line-height:18px;display:block;}
+.layer_popup .hd, .popup_area .hd{border-bottom:4px solid #333;height:51px !important;background-color:#333 !important;padding-top:0 !important;padding-left:0 !important;margin-bottom:0 !important;}
+.popup_area .hd{position:relative;}
+.layer_popup .title_area h4, .popup_area .title_area h2{float:none !important;width:auto !important;margin-right:0 !important;background:none !important;color:#f2f0e5;border:1px solid #707070;height:35px !important;padding-top:14px;padding-left:20px;font-family:Nanum Gothic, Apple SD Gothic Neo, AppleGothic, 돋움, dotum, Sans-serif;font-size:22px;line-height:22px;letter-spacing:-2px;}
+.layer_popup .hd a.close, .popup_area .hd a.close{position:absolute;top:17px;right:20px;width:18px;height:18px;}
+.layer_popup .bd{overflow-y:auto;overflow-x:hidden;position:relative;max-height:460px;margin:0 auto;padding-left:40px;padding-right:30px;padding-top:39px;}
+.popup_area .bd{margin:0 auto;padding-left:30px;padding-right:30px;padding-top:27px;}
+.layer_popup .ft, .popup_area .ft{text-align:center;padding-left:40px;padding-right:40px;padding-top:22px;padding-bottom:23px;}
+.layer_popup .ft *{vertical-align:middle;}
+.layer_popup .ft a.close, .popup_area .ft a.close{display:inline-block;width:53px;height:29px;background-position:0 -42px;}
+.layer_popup .ft a.close span.hidden, .popup_area .ft a.close span.hidden{font-size:0;line-height:0;text-indent:-9999px;}
+.layer_popup .bd h5,.popup_area .bd h5{margin-top:28px;margin-bottom:8px;font-family:Nanum Gothic, Apple SD Gothic Neo, AppleGothic, 돋움, dotum, Sans-serif;font-size:18px;line-height:20px;font-weight:bold;letter-spacing:-2px;}
+.layer_popup .bd h5 strong, .popup_area .bd h5 strong{color:#c62424;}
+.layer_popup .bd span.des span, .popup_area .bd span.des span{color:#666;}
+.layer_popup .bd ul.list li, .popup_area .bd ul.list li{padding-left:10px;margin-bottom:0 !important;padding-bottom:0 !important;border:0 !important;line-height:20px;background:url("http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/common/k_layer_common.png") no-repeat 0 -84px;color:#666;}
+.layer_popup .bd em, .popup_area .bd em{color:#c62424;}
+.pop_close{display:block;overflow:hidden;position:absolute;top:17px;right:20px;width:18px;height:18px;line-height:0;background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/common/k_layer_common.png) no-repeat top left;color:#ffffff;font-size:0}
+.pop_btn_wrap{padding:0 0 30px;text-align:center}
+
+/* input */
+.input_txt{height:25px;line-height:23px;padding-top:2px;padding-left:5px;border:1px solid #b5b5b5;background:url('http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/common/trans_bg.png');}
+.textarea{border:1px solid #bdbdbb;padding:10px}
+.textarea textarea{width:100%;background:none;outline:none}
+.textarea_info{margin-top:5px;color:#999999}
+
+/* blackscreen */
+.blackscreen {position: fixed;top: 0;left: 0;width: 100%;height: 100%;_height: 1000px;filter: alpha(opacity=30);opacity: 0.3;background-color: #fff;text-align: center;z-index: 10000;}
+
+/* btn */
+.btn_wrap{overflow:hidden;margin:20px 0 40px;text-align:center}
+.btn_wrap.type02{margin:10px 0 30px}
+.btn_pack *:hover,
+.btn_pack *:active,
+.btn_pack *:focus{color:#690}
+
+table .btn_pack{vertical-align:middle !important}
+.btn_pack,
+.btn_pack > *{display:inline-block;position:relative;background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/common/btn_pack.gif) no-repeat;white-space:nowrap}
+.btn_pack{margin-right:4px;vertical-align:top;#vertical-align:middle}
+.btn_pack > *{left:4px;cursor:pointer;_cursor:hand}
+.btn_pack a{display:block;text-decoration:none}
+.btn_pack.sm,
+.btn_pack.sm > *{height:23px;line-height:24px;#line-height:23px;font-size:12px;font-weight:bold}
+.btn_pack.me,
+.btn_pack.me > *{height:29px;line-height:30px;#line-height:29px;font-size:12px;font-weight:bold}
+.btn_pack.la,
+.btn_pack.la > *{height:48px;line-height:50px;#line-height:49px;font-size:12px;font-weight:bold}
+.btn_pack.la02,
+.btn_pack.la02 > *{height:58px;line-height:60px;#line-height:59px;font-size:12px;font-weight:bold}
+.btn_pack.me.type04{background-position:left -90px}
+.btn_pack.me.type04 > *{padding:0 15px 0 11px;background-position:right -90px;color:#f6f6f4}
+.btn_pack.me.type05{background-position:left -124px}
+.btn_pack.me.type05 > *{padding:0 15px 0 11px;background-position:right -124px;color:#333333}
+.btn_pack.me.type06{background-position:left -158px}
+.btn_pack.me.type06 > *{padding:0 15px 0 11px;background-position:right -158px;color:#c62324}
+.btn_pack.me.type07{background-position:left -192px}
+.btn_pack.me.type07 > *{padding:0 15px 0 11px;background-position:right -192px;color:#666666}
+
+.btn_pack.la.type01{background-position:left -362px}
+.btn_pack.la.type01 > *{padding:0 15px 0 11px;background-position:right -362px;color:#ffffff}
+.btn_pack.la02.type01{background-position:left -415px}
+.btn_pack.la02.type01 > *{padding:0 15px 0 11px;background-position:right -415px;color:#ffffff}
+
+/* box */
+.bxType06{padding:20px 0;border:1px solid #b5b5b5}
+.bxType07{padding:20px;background-color:#ececea}
+
+/* loading */
+#ticket_loading{display:none;position:relative;z-index:99999}
+.loadWrap{position:fixed;top:50%;left:0;right:0;margin-top:-33px;text-align:center}
+.loadTxt{display:block;padding-top:15px;color:#ffffff;font-size:14px;font-weight:bold;font-family:Nanum Gothic, 나눔고딕, Apple SD Gothic Neo, AppleGothic, 돋움, dotum, Sans-serif;letter-spacing:0 !important}
+.dimm{position:fixed;top:0;left:0;right:0;bottom:0;background:url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/common/trans_bg.png);}/*url(http://img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/common/loading_bg.png) repeat;}*/

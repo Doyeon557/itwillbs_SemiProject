@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Model2</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+<!--   가상주소를 실제파일 연결하는 파일경로
+=> 처리담당자(서블릿) 파일 => 주소매핑파일 지정
+=> 개발자가 주소매핑 작업을 하도록 처리담당자(서블릿) 지정-->
+<!-- http://localhost:8080/Model2/insertForm.me -->
+<servlet>
+	<servlet-name>MemberFrontController</servlet-name>
+	<servlet-class>com.itwillbs.member.action.MemberFrontController</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>MemberFrontController</servlet-name>
+	<url-pattern>*.me</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>BoardFrontController</servlet-name>
+	<servlet-class>com.itwillbs.board.action.BoardFrontController</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>BoardFrontController</servlet-name>
+	<url-pattern>*.bo</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ReBoardFrontController</servlet-name>
+	<servlet-class>com.itwillbs.Reboard.action.ReBoardFrontController</servlet-class>
+</servlet>
+
+
+<servlet>
+   <servlet-name>MovieInfoFrontController</servlet-name>
+   <servlet-class>com.itwillbs.movie_Info.action.MovieInfoFrontController</servlet-class>
+</servlet>
+  
+<servlet-mapping>
+   <servlet-name>MovieInfoFrontController</servlet-name>
+   <url-pattern>*.in</url-pattern>
+</servlet-mapping> 
+
+<servlet>
+		<servlet-name>ReserveFrontController</servlet-name>
+		<servlet-class>com.itwillbs.reserve.action.ReserveFrontController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ReserveFrontController</servlet-name>
+		<url-pattern>*.re</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ReserveBoardFrontController</servlet-name>
+		<servlet-class>com.itwillbs.reservedBoard.action.ReserveBoardFrontController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ReserveBoardFrontController</servlet-name>
+		<url-pattern>*.rb</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>QnaBoardFrontController</servlet-name>
+		<servlet-class>com.itwillbs.qnaBoard.action.QnaBoardFrontController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>QnaBoardFrontController</servlet-name>
+		<url-pattern>*.ao</url-pattern>
+	</servlet-mapping>
+</web-app>

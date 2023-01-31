@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+.head {
+	font-size: 20px;
+	font-weight: bold;
+		padding: 5px;
+	margin: auto;
+}
+
+.title {
+	font-size: 25px;
+	font-weight: bold;
+	padding: 10px;
+	margin: auto;
+}
+
+.reviewWriteForm {
+	text-align: center;
+}
+
+#Review_Text {
+	resize: none;
+}
+
+.closeBtn {
+	background-color: #503396;
+	color: white;
+	border: none;
+	width: 170px;
+	height: 40px;
+}
+
+.updateBtn {
+	background-color: #503396;
+	color: white;
+	border: none;
+	width: 170px;
+	height: 40px;
+	margin: 5px 0px 0px 10px;
+}
+
+.count {
+	text-align: right; 
+	color:#666; 
+	font-size:15px;
+}

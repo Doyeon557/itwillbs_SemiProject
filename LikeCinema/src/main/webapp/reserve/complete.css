@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+.reserve_com{
+	color:#6A0888;
+	font-size: 60px;
+	font-weight: 800;
+	text-align: center;
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+}
+
+.href{
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom: 3em;
+}
+
+.href>tr>td>a{
+	font-size: 15px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.border{
+  border: 20px solid #6A0888;
+  margin: 8em 10em 5em 10em;
+  padding: 1em;
+}
+
+.info{
+	font-size: 30px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+
+.info1{
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:6em;
+	line-height: 2.5;
+/* 	border:5px solid #6A0888; */
+}
+
+.info1>th{
+	color:#6A0888;
+}
+td{
+	text-align: left;
+	font-weight: 550;
+}

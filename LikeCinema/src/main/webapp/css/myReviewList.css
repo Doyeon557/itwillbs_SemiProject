@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+.myReview table {
+	background-color: #f8f8fa;
+	border-radius: 10px;
+	margin: 0px 0px 10px 220px;
+	width: 1100px;
+	height: 500px;
+	font-size: 15px;
+}
+
+.myReview td {
+	padding: 10px;
+}
+
+.starImg {
+	width: 100px;
+
+}
+
+.reviewId {
+	width: 150px;
+}
+
+.revBtn2 {
+	color: #503396;
+	background-color: transparent;
+	float: right; 
+	border: none;
+	font-size: 15px;
+	margin: 0px 5px 0 0;
+
+}
+
+.revBtn2:hover{
+	color: #329eb1;
+	cursor: pointer;
+}
+
+.reviewId>b{
+	color: #503396;
+}

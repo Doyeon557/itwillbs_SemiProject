@@ -1,0 +1,155 @@
+@charset "UTF-8"; 
+
+html {
+	height: 100%
+}
+
+html, html.font_zoom1 {
+	font-size: 10px
+}
+
+html.font_zoom2 {
+	font-size: 11.7px
+}
+
+body {
+	line-height: 18px;
+	font-size: 16px;
+	-webkit-text-size-adjust: none;
+	background-color: #fff
+}
+
+body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input,
+	legend, li, ol, p, select, table, td, textarea, th, ul {
+	margin: 0;
+	padding: 0
+}
+
+#app, body, button, html, input, select, textarea {
+	font-family: NanumSquareR, -apple-system, AppleSDGothicNeo, SFProDisplay,
+		BlinkMacSystemFont, HelveticaNeue, Helvetica, arial, "sans-serif"
+}
+
+@media ( min-width :1025px) {
+	body {
+		height: 100%
+	}
+	b {
+		font-family: NanumSquareB
+	}
+}
+
+@media ( max-width :1024px) {
+	#app, body, button, html, input, select, textarea {
+		font-family: -apple-system, AppleSDGothicNeo, SFProDisplay,
+			BlinkMacSystemFont, HelveticaNeue, Helvetica, arial, "sans-serif"
+	}
+}
+
+address, em {
+	font-style: normal
+}
+
+fieldset, img {
+	border: 0;
+	vertical-align: top
+}
+
+table {
+	border-collapse: collapse
+}
+
+input, textarea {
+	-webkit-appearance: none;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	border: 0
+}
+
+dl, ol, ul {
+	list-style: none
+}
+
+a {
+	color: inherit
+}
+
+a, a[href]:active, a[href]:focus, a[href]:hover {
+	text-decoration: none
+}
+
+button {
+	-webkit-appearance: none;
+	border: 0;
+	background: none;
+	cursor: pointer;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+	color: inherit
+}
+
+.blind {
+	overflow: hidden !important;
+	position: absolute !important;
+	clip: rect(0, 0, 0, 0) !important;
+	width: 1px !important;
+	height: 1px !important;
+	margin: -1px !important;
+	-webkit-user-select: none;
+	-moz-user-select:  none;
+	-ms-user-select:  none;
+	user-select: none
+}
+
+.row_mo {
+	display: none
+}
+
+#__next {
+	height: 100%
+}
+
+@media ( max-width :750px) {
+	.row_mo {
+		display: block
+	}
+	.row_pc {
+		display: none
+	}
+}
+
+@media only screen and (min-width:1280px) {
+	.service-editor-wrap .se-viewer .se-caption, .service-editor-wrap .se-viewer .se-component-content,
+		.service-editor-wrap .se-viewer .se-component-content.se-component-content-fit,
+		.service-editor-wrap .se-viewer .se-video .se-media-meta-info-wrap {
+		max-width: 1050px
+	}
+}
+
+.service-editor-wrap .se-viewer:lang(ko-KR) .se-section-text.se-l-default .se-ff-
+	{
+	font-family: se-nanumsquare, 나눔고딕, nanumgothic, sans-serif, Meiryo
+}
+
+.service-editor-wrap .se-viewer .se-section-text.se-l-default .se-fs- {
+	font-size: 17px
+}
+
+@media ( min-width :768px)and (orientation:portrait) , ( min-width
+	:1024px)and (orientation:landscape) {
+	.service-editor-wrap .se-viewer .se-section-text.se-l-default .se-fs- {
+		font-size: 16px
+	}
+}
+
+.service-editor-wrap .se-viewer .se-section-text.se-l-default .se-text-paragraph
+	{
+	line-height: 2.1
+}
+
+@media only screen and (max-width:760px) {
+	.service-editor-wrap .se-viewer .se-section-text.se-l-default .se-text-paragraph
+		{
+		line-height: 2.1 !important
+	}
+}
